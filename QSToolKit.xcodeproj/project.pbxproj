@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */; };
+		5204F5431DC82B3D00D8F1FD /* NSArray+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */; };
+		5204F5451DC82B8800D8F1FD /* CategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5441DC82B8800D8F1FD /* CategoryHeader.h */; };
+		5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */; };
+		5204F54E1DC82C5E00D8F1FD /* NSString+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */; };
 		527009931DC5051B00E39DE6 /* QSToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527009891DC5051B00E39DE6 /* QSToolKit.framework */; };
 		527009981DC5051B00E39DE6 /* QSToolKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 527009971DC5051B00E39DE6 /* QSToolKitTests.m */; };
 		5270099A1DC5051B00E39DE6 /* QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5270098C1DC5051B00E39DE6 /* QSToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		527009A61DC5080100E39DE6 /* NSArray+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 527009A41DC5080100E39DE6 /* NSArray+QSToolKit.h */; };
-		527009A71DC5080100E39DE6 /* NSArray+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 527009A51DC5080100E39DE6 /* NSArray+QSToolKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+QSToolKit.h"; sourceTree = "<group>"; };
+		5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QSToolKit.m"; sourceTree = "<group>"; };
+		5204F5441DC82B8800D8F1FD /* CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QSToolKit.h"; sourceTree = "<group>"; };
+		5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QSToolKit.m"; sourceTree = "<group>"; };
 		527009891DC5051B00E39DE6 /* QSToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QSToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5270098C1DC5051B00E39DE6 /* QSToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSToolKit.h; sourceTree = "<group>"; };
 		5270098D1DC5051B00E39DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527009921DC5051B00E39DE6 /* QSToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		527009971DC5051B00E39DE6 /* QSToolKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSToolKitTests.m; sourceTree = "<group>"; };
 		527009991DC5051B00E39DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		527009A41DC5080100E39DE6 /* NSArray+QSToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+QSToolKit.h"; sourceTree = "<group>"; };
-		527009A51DC5080100E39DE6 /* NSArray+QSToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QSToolKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5204F53F1DC82B3D00D8F1FD /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */,
+				5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		5204F5461DC82BBA00D8F1FD /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */,
+				5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		5270097F1DC5051A00E39DE6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +118,9 @@
 		527009A31DC507E200E39DE6 /* Catogory */ = {
 			isa = PBXGroup;
 			children = (
-				527009A41DC5080100E39DE6 /* NSArray+QSToolKit.h */,
-				527009A51DC5080100E39DE6 /* NSArray+QSToolKit.m */,
+				5204F5441DC82B8800D8F1FD /* CategoryHeader.h */,
+				5204F5461DC82BBA00D8F1FD /* NSString */,
+				5204F53F1DC82B3D00D8F1FD /* NSArray */,
 			);
 			path = Catogory;
 			sourceTree = "<group>";
@@ -107,7 +132,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527009A61DC5080100E39DE6 /* NSArray+QSToolKit.h in Headers */,
+				5204F5451DC82B8800D8F1FD /* CategoryHeader.h in Headers */,
+				5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */,
+				5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */,
 				5270099A1DC5051B00E39DE6 /* QSToolKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527009A71DC5080100E39DE6 /* NSArray+QSToolKit.m in Sources */,
+				5204F54E1DC82C5E00D8F1FD /* NSString+QSToolKit.m in Sources */,
+				5204F5431DC82B3D00D8F1FD /* NSArray+QSToolKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +430,7 @@
 				5270099F1DC5051B00E39DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		527009A01DC5051B00E39DE6 /* Build configuration list for PBXNativeTarget "QSToolKitTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +439,7 @@
 				527009A21DC5051B00E39DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
