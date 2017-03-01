@@ -66,7 +66,7 @@
 
 - (id)find:(BOOL (^)())block {
     for (id obj in self) {
-        if (block(obj, [self indexOfObject:obj]), self) {
+        if (block(obj, [self indexOfObject:obj], self)) {
             return obj;
         }
     }
