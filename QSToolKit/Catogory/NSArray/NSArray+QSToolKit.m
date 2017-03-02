@@ -23,9 +23,9 @@
 }
 
 - (void)each:(void (^)())block {
-    [self enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        block(obj, idx, self);
-    }];
+    for (id obj in self) {
+        block(obj, [self indexOfObject:obj], self);
+    }
 }
 
 - (NSArray *)map:(id (^)())block {
