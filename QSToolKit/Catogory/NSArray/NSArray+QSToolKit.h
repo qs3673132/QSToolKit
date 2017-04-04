@@ -13,6 +13,7 @@
 - (id)sample;
 - (NSArray *)reverse;
 - (NSString *)join:(NSString *)string;
+
 - (void)each:(void(^)())block;
 - (NSArray *)map:(id(^)())block;
 - (NSArray *)filter:(BOOL(^)())block;
@@ -21,5 +22,9 @@
 - (id)find:(BOOL(^)())block;
 - (NSUInteger)findIndex:(BOOL (^)())block;
 - (id)reduce:(id(^)())block :(id)value;
+
+- (NSArray *)sort:(NSComparator)comparator;
+
+- (NSArray *)chunk:(NSUInteger)size;
 
 @end

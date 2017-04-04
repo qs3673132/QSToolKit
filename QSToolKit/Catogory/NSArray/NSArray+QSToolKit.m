@@ -86,4 +86,22 @@
     return _value;
 }
 
+
+- (NSArray *)sort:(NSComparator)comparator {
+    return [self sortedArrayUsingComparator:comparator];
+}
+
+- (NSArray *)chunk:(NSUInteger)size {
+    NSMutableArray *sections = [NSMutableArray array];
+    [self each:^(id value, NSUInteger index){
+        NSMutableArray *section = sections.lastObject;
+        if (!section || section.count >= size) {
+            section = [NSMutableArray array];
+            [sections addObject:section];
+        }
+        [section addObject:value];
+    }];
+    return sections;
+}
+
 @end
