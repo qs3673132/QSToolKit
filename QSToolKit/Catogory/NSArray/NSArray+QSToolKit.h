@@ -27,4 +27,13 @@
 
 - (NSArray *)chunk:(NSUInteger)size;
 
+- (NSArray *)compact;
+
+- (NSArray *)concat:(NSArray *)array;
++ (NSArray *)concat:(id)obj, ...;
+
+- (NSArray *)difference:(NSArray *)values;
+- (NSArray *)drop:(NSUInteger)index;
+- (NSArray *)dropRight:(NSUInteger)index;
+
 @end

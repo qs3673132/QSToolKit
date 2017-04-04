@@ -104,4 +104,58 @@
     return sections;
 }
 
+- (NSArray *)compact {
+    return [self find:^BOOL(id value){
+        return ![value isKindOfClass:[NSNull class]];
+    }];
+}
+
+- (NSArray *)concat:(NSArray *)array {
+    return [self arrayByAddingObjectsFromArray:array];
+}
+
++ (NSArray *)concat:(id)obj, ... {
+    NSMutableArray *arguments = [NSMutableArray array];
+    if (obj) {
+        [arguments addObject:obj];
+        
+        va_list args;
+        va_start(args, obj);
+        id arg;
+        while ((arg = va_arg(args, id))) {
+            [arguments addObject:arg];
+        }
+        va_end(args);
+    }
+
+    return [arguments reduce:^id(NSMutableArray *reducer, id value){
+        if ([value isKindOfClass:[NSArray class]]) {
+            [reducer addObjectsFromArray:value];
+        }
+        else {
+            [reducer addObject:value];
+        }
+        return reducer;
+    } :[NSMutableArray array]];
+}
+
+- (NSArray *)difference:(NSArray *)values {
+    return [self filter:^BOOL(id value){
+        return ![values containsObject:value];
+    }];
+}
+
+- (NSArray *)drop:(NSUInteger)index {
+    NSInteger _index = (NSInteger)index < 0 ? 0 : index;
+    NSUInteger begin = MIN(_index, self.count - 1);
+    NSUInteger count = MAX(0, (NSInteger)self.count - _index);
+    return [self subarrayWithRange:NSMakeRange(begin, count)];
+}
+
+- (NSArray *)dropRight:(NSUInteger)index {
+    NSInteger _index = (NSInteger)index < 0 ? 0 : index;
+    NSUInteger count = MAX(0, (NSInteger)self.count - _index);
+    return [self subarrayWithRange:NSMakeRange(0, count)];
+}
+
 @end

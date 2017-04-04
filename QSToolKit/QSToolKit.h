@@ -6,7 +6,7 @@
 //  Copyright © 2016年 齐嵩. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <QSToolKit/CategoryHeader.h>
 
 //! Project version number for QSToolKit.
 FOUNDATION_EXPORT double QSToolKitVersionNumber;
