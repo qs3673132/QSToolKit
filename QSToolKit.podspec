@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "QSToolKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.1"
   s.summary      = "some tools"
   s.homepage     = "https://bitbucket.org/qs3673132/qstoolkit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
