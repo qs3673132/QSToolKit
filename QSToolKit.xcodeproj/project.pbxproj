@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */; };
+		5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5204F5431DC82B3D00D8F1FD /* NSArray+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */; };
-		5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */; };
+		5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5204F54E1DC82C5E00D8F1FD /* NSString+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */; };
 		527009931DC5051B00E39DE6 /* QSToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527009891DC5051B00E39DE6 /* QSToolKit.framework */; };
 		527009981DC5051B00E39DE6 /* QSToolKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 527009971DC5051B00E39DE6 /* QSToolKitTests.m */; };
