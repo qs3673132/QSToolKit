@@ -43,9 +43,10 @@
 - (NSArray *)compact;
 - (NSArray *)uniq;
 
+
+// todo
 //- (NSArray *)flatten;
 //- (NSArray *)flattenDeep;
 //- (NSArray *)flattenDepth:(NSUInteger)index;
-
 
 @end
