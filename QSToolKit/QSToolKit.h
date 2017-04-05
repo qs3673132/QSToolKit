@@ -6,14 +6,18 @@
 //  Copyright © 2016年 齐嵩. All rights reserved.
 //
 
-#import <QSToolKit/CategoryHeader.h>
 
-//! Project version number for QSToolKit.
+#if __has_include(<YYKit/YYKit.h>)
+
 FOUNDATION_EXPORT double QSToolKitVersionNumber;
-
-//! Project version string for QSToolKit.
 FOUNDATION_EXPORT const unsigned char QSToolKitVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <QSToolKit/PublicHeader.h>
+
+#import <QSToolKit/NSString+QSToolKit.h>
+#import <QSToolKit/NSArray+QSToolKit.h>
 
 
+#else
+
+#import "NSString+QSToolKit.h"
+#import "NSArray+QSToolKit.h"

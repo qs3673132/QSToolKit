@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */; };
 		5204F5431DC82B3D00D8F1FD /* NSArray+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */; };
-		5204F5451DC82B8800D8F1FD /* CategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F5441DC82B8800D8F1FD /* CategoryHeader.h */; };
 		5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */; };
 		5204F54E1DC82C5E00D8F1FD /* NSString+QSToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */; };
 		527009931DC5051B00E39DE6 /* QSToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527009891DC5051B00E39DE6 /* QSToolKit.framework */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		5204F5401DC82B3D00D8F1FD /* NSArray+QSToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+QSToolKit.h"; sourceTree = "<group>"; };
 		5204F5411DC82B3D00D8F1FD /* NSArray+QSToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QSToolKit.m"; sourceTree = "<group>"; };
-		5204F5441DC82B8800D8F1FD /* CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
 		5204F54B1DC82C5D00D8F1FD /* NSString+QSToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QSToolKit.h"; sourceTree = "<group>"; };
 		5204F54C1DC82C5D00D8F1FD /* NSString+QSToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QSToolKit.m"; sourceTree = "<group>"; };
 		527009891DC5051B00E39DE6 /* QSToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QSToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +116,6 @@
 		527009A31DC507E200E39DE6 /* Catogory */ = {
 			isa = PBXGroup;
 			children = (
-				5204F5441DC82B8800D8F1FD /* CategoryHeader.h */,
 				5204F5461DC82BBA00D8F1FD /* NSString */,
 				5204F53F1DC82B3D00D8F1FD /* NSArray */,
 			);
@@ -132,7 +129,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5204F5451DC82B8800D8F1FD /* CategoryHeader.h in Headers */,
 				5204F5421DC82B3D00D8F1FD /* NSArray+QSToolKit.h in Headers */,
 				5204F54D1DC82C5D00D8F1FD /* NSString+QSToolKit.h in Headers */,
 				5270099A1DC5051B00E39DE6 /* QSToolKit.h in Headers */,
