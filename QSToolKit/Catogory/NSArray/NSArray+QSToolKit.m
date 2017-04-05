@@ -14,12 +14,28 @@
     return self[arc4random() % self.count];
 }
 
+- (NSArray *)sampleSize:(NSUInteger)size {
+    return [[self shuffle] subarrayWithRange:NSMakeRange(0, MIN(self.count, size))];
+}
+
+- (NSArray *)shuffle {
+    NSMutableArray *list = self.mutableCopy;
+    NSMutableArray *newList = [NSMutableArray array];
+    while (list.count) {
+        NSUInteger index = arc4random() % self.count;
+        id obj = [list objectAtIndex:index];
+        [list removeObject:obj];
+        [newList addObject:obj];
+    }
+    return newList;
+}
+
 - (NSArray *)reverse {
     return self.reverseObjectEnumerator.allObjects;
 }
 
-- (NSString *)join:(NSString *)string {
-    return [self componentsJoinedByString:string];
+- (NSString *)join:(NSString *)separator {
+    return [self componentsJoinedByString:separator];
 }
 
 - (void)each:(void (^)())block {
@@ -104,12 +120,6 @@
     return sections;
 }
 
-- (NSArray *)compact {
-    return [self find:^BOOL(id value){
-        return ![value isKindOfClass:[NSNull class]];
-    }];
-}
-
 - (NSArray *)concat:(NSArray *)array {
     return [self arrayByAddingObjectsFromArray:array];
 }
@@ -156,6 +166,24 @@
     NSInteger _index = (NSInteger)index < 0 ? 0 : index;
     NSUInteger count = MAX(0, (NSInteger)self.count - _index);
     return [self subarrayWithRange:NSMakeRange(0, count)];
+}
+
+- (NSArray *)initial {
+    return [self dropRight:1];
+}
+
+- (NSArray *)tail {
+    return [self drop:1];
+}
+
+- (NSArray *)compact {
+    return [self find:^BOOL(id value){
+        return ![value isKindOfClass:[NSNull class]];
+    }];
+}
+
+- (NSArray *)uniq {
+    return [[NSSet setWithArray:self] allObjects];
 }
 
 @end

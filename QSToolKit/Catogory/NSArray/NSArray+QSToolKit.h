@@ -11,8 +11,10 @@
 @interface NSArray (QSToolKit)
 
 - (id)sample;
+- (NSArray *)sampleSize:(NSUInteger)size;
+- (NSArray *)shuffle;
 - (NSArray *)reverse;
-- (NSString *)join:(NSString *)string;
+- (NSString *)join:(NSString *)separator;
 
 - (void)each:(void(^)())block;
 - (NSArray *)map:(id(^)())block;
@@ -27,13 +29,23 @@
 
 - (NSArray *)chunk:(NSUInteger)size;
 
-- (NSArray *)compact;
-
 - (NSArray *)concat:(NSArray *)array;
 + (NSArray *)concat:(id)obj, ...;
 
 - (NSArray *)difference:(NSArray *)values;
+
 - (NSArray *)drop:(NSUInteger)index;
 - (NSArray *)dropRight:(NSUInteger)index;
+
+- (NSArray *)initial;
+- (NSArray *)tail;
+
+- (NSArray *)compact;
+- (NSArray *)uniq;
+
+- (NSArray *)flatten;
+- (NSArray *)flattenDeep;
+- (NSArray *)flattenDepth:(NSUInteger)index;
+
 
 @end
