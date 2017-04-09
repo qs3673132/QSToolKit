@@ -11,8 +11,8 @@
 @interface NSString (QSToolKit)
 
 #pragma mark - API Extension
-- (NSString *)firstChar;
-- (NSString *)lastChar;
+- (NSString *)first;
+- (NSString *)last;
 - (BOOL)isInteger;
 - (NSInteger)getInteger;
 

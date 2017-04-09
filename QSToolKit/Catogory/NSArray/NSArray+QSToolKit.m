@@ -38,6 +38,23 @@
     return [self componentsJoinedByString:separator];
 }
 
+- (id)before:(id)obj {
+    NSInteger index = [self indexOfObject:obj];
+    if (index == NSNotFound || index == 0) {
+        return nil;
+    }
+    return [self objectAtIndex:index - 1];
+}
+
+- (id)after:(id)obj {
+    NSInteger index = [self indexOfObject:obj];
+    if (index == NSNotFound || index == (self.count - 1)) {
+        return nil;
+    }
+    return [self objectAtIndex:index + 1];
+}
+
+
 - (void)each:(void (^)())block {
     for (id obj in self) {
         block(obj, [self indexOfObject:obj], self);

@@ -15,6 +15,8 @@
 - (NSArray *)shuffle;
 - (NSArray *)reverse;
 - (NSString *)join:(NSString *)separator;
+- (id)before:(id)obj;
+- (id)after:(id)obj;
 
 - (void)each:(void(^)())block;
 - (NSArray *)map:(id(^)())block;

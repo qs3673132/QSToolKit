@@ -14,12 +14,12 @@
 
 #pragma mark - API Extension
 
-- (NSString *)firstChar {
+- (NSString *)first {
     if (self.length == 0) return nil;
     return [self substringToIndex:1];
 }
 
-- (NSString *)lastChar {
+- (NSString *)last {
     if (self.length == 0) return nil;
     if (self.length == 1) return self;
     return [self substringFromIndex:self.length - 1];
