@@ -186,4 +186,43 @@
     return [[NSSet setWithArray:self] allObjects];
 }
 
+
+- (NSArray *)flatten {
+    NSMutableArray *array = [NSMutableArray array];
+    [self each:^(NSObject *obj){
+        if ([obj isKindOfClass:[NSArray class]]) {
+            [array addObjectsFromArray:(NSArray *)obj];
+        }
+        else {
+            [array addObject:obj];
+        }
+    }];
+    return array;
+}
+
+- (NSArray *)flattenDeep {
+    BOOL isFlattenable = [self some:^BOOL(NSObject *obj){
+        return [obj isKindOfClass:[NSArray class]];
+    }];
+    if (!isFlattenable) {
+        return self;
+    }
+    NSArray *array = [self flatten];
+    return [array flattenDeep];
+}
+
+- (NSArray *)flattenDepth:(NSUInteger)index {
+    if ((NSInteger)index < 1) {
+        return self;
+    }
+    BOOL isFlattenable = [self some:^BOOL(NSObject *obj){
+        return [obj isKindOfClass:[NSArray class]];
+    }];
+    if (!isFlattenable) {
+        return self;
+    }
+    NSArray *array = [self flatten];
+    return [array flattenDepth:index - 1];
+}
+
 @end

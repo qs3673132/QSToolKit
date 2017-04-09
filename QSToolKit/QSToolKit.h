@@ -6,6 +6,8 @@
 //  Copyright © 2016年 齐嵩. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 
 FOUNDATION_EXPORT double QSToolKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char QSToolKitVersionString[];
