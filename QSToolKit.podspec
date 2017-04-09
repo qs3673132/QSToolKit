@@ -11,11 +11,10 @@ Pod::Spec.new do |s|
   s.name         = "QSToolKit"
   s.version      = "0.0.1"
   s.summary      = "some tools"
-  s.homepage     = "https://bitbucket.org/qs3673132/qstoolkit"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/qs3673132/QSToolKit"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "qs3673132" => "791956776@qq.com" }
-  s.source       = { :git => "https://qs3673132@bitbucket.org/qs3673132/QSToolKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/qs3673132/QSToolKit.git", :tag => "#{s.version}" }
 
   s.source_files = 'QSToolKit/**/*.{h,m}'
   s.public_header_files = 'QSToolKit/**/*.{h}'
